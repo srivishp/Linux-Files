@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # get OS update
 while true; do
@@ -52,6 +52,7 @@ read -p "Do you want to install Python? Press y/n to continue." yn
     case $yn in
         [Yy]* ) sudo apt-get install python3.7
 		sudo apt-get upgrade python3
+		sudo apt install python-pip
 		pip install numpy
 		python3 -m pip install jupyter
 		pip install matplotlib; break;;
@@ -77,9 +78,18 @@ esac
 read -p "Do you want to install Andromeda? Press y/n to continue." yn
 case $yn in
         [Yy]* )  xdg-open https://androidfilehost.com/?fid=961840155545594692; break;;
-        [Nn]* ) exit;;
+        [Nn]* ) 
         
 esac
+
+# install Wireshark
+read -p "Do you wish to install Wireshark? Press y/n to continue." yn
+case $yn in
+	[Yy]* ) sudo apt install wireshark-qt; break;;
+    	[Nn]* ) exit;;
+
+esac
+
 done
 
 
