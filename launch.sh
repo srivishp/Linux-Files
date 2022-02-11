@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # get OS update
 while true; do
@@ -52,6 +52,7 @@ read -p "Do you want to install Python? Press y/n to continue." yn
     case $yn in
         [Yy]* ) sudo apt-get install python3.7
 		sudo apt-get upgrade python3
+		sudo apt install python-pip
 		pip install numpy
 		python3 -m pip install jupyter
 		pip install matplotlib; break;;
@@ -80,6 +81,15 @@ case $yn in
         [Nn]* ) exit;;
         
 esac
+
+# install Wireshark
+read -p "Do you wish to install Wireshark? Press y/n to continue." yn
+case $yn in
+	[Yy]* ) sudo apt install wireshark-qt
+    	[Nn]* ) 
+
+esac
+
 done
 
 
