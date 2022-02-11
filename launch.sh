@@ -78,15 +78,15 @@ esac
 read -p "Do you want to install Andromeda? Press y/n to continue." yn
 case $yn in
         [Yy]* )  xdg-open https://androidfilehost.com/?fid=961840155545594692; break;;
-        [Nn]* ) exit;;
+        [Nn]* ) 
         
 esac
 
 # install Wireshark
 read -p "Do you wish to install Wireshark? Press y/n to continue." yn
 case $yn in
-	[Yy]* ) sudo apt install wireshark-qt
-    	[Nn]* ) 
+	[Yy]* ) sudo apt install wireshark-qt; break;;
+    	[Nn]* ) exit;;
 
 esac
 
