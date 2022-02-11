@@ -50,8 +50,8 @@ esac
 #install Python
 read -p "Do you want to install Python? Press y/n to continue." yn
     case $yn in
-        [Yy]* ) sudo apt-get install python3.7
-		sudo apt-get upgrade python3
+        [Yy]* ) sudo apt-get install python
+		sudo apt-get upgrade python
 		sudo apt install python-pip
 		pip install numpy
 		python3 -m pip install jupyter
