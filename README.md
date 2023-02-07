@@ -3,7 +3,7 @@ Works with HP Laptop 15-DA0077TX
 1) Ubuntu OS Update
 2) Install WiFi Drivers
 3) Install drivers for printer: HP LaserJet 1020 Plus
-4) Install Pip & Python 3.7 (numpy, matplotlib, jupyter)
+4) Install Pip, Python and its libraries (numpy, matplotlib, jupyter)
 5) Install Java (openjdk-8)
 6) Install Andromeda by Projekt.io
 7) Install Wireshark
